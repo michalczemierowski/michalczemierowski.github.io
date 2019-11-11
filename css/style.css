@@ -1,57 +1,13 @@
 body {
   background-color: #242227;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   font-family: Consolas, sans-serif;
   width: 50%;
   margin: auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-li {
-  float: left;
-  border-right: 2px solid #242227;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: white;
-  color: black;
-}
-
-.active {
-  background-color: white;
-  color: black;
-}
-
-.content {
-  color: black;
-  padding: 20px;
-}
-
 .content div {
-  border: 3px solid black;
   background-color: white;
-}
-
-.content div:hover {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content p, h2, h3, h4, h5, h6 {
@@ -63,20 +19,16 @@ li a:hover:not(.active) {
   font-size: 60px;
 }
 
-.content span {
-  padding: 20px;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
-  display: table;
+  display: table;ś
 }
 
 .clearfix p {
   text-align: left;
-  padding: 10px;
-  font-size: 24px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .clearfix .gmail {
@@ -110,11 +62,3 @@ a:hover {
   text-align: left;
   padding: 20px;
 }
-
-/* 
-#22223b
-#494968
-#8b8b99
-#a7a7c9
-#e3e3f2
-*/

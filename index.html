@@ -2,45 +2,124 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>Michał Czemierowski - GitHub</title>
 </head>
 
 <body>
-  <ul>
-    <li><a id="home" class="active" href="#home">Home</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="content">
     <div class="clearfix">
       <div id="contact" class="active">
         <h1>About me:</h1>
-        <p>// TODO</p>
+        <hr>
+        <p>// TODO: add "ABOUT ME"</p>
+        <hr>
+        <h3>List of my projects:</h2>
+          <table class="table table-striped table-light">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Language</th>
+                <th scope="col">Technology</th>
+                <th scope="col">Href</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>voxel royale</td>
+                <td>C#</td>
+                <td>Unity</td>
+                <td><a href="https://github.com/michalczemierowski/Unity--voxel-royale" target="_blank">GitHub</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>2d game</td>
+                <td>C#</td>
+                <td>Unity</td>
+                <td><a href="https://github.com/michalczemierowski/Unity--2D-game" target="_blank">GitHub</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>django website</td>
+                <td>Python</td>
+                <td>Django</td>
+                <td><a href="https://github.com/michalczemierowski/python.django--django-website"
+                    target="_blank">GitHub</a></a></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>olx alert</td>
+                <td>Python</td>
+                <td>Django</td>
+                <td><a href="https://github.com/michalczemierowski/python.django--olx-alert" target="_blank">GitHub</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>jupyter notebooks</td>
+                <td>Python</td>
+                <td>Jupyer Notebook</td>
+                <td><a href="https://github.com/michalczemierowski/python--jupyter-notebooks" target="_blank">GitHub</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>item rename</td>
+                <td>Java</td>
+                <td>Spigot</td>
+                <td><a href="https://github.com/michalczemierowski/java--minecraft-itemrename"
+                    target="_blank">GitHub</a></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>minecraft server plugin</td>
+                <td>Java</td>
+                <td>Spigot</td>
+                <td><a href="https://github.com/michalczemierowski/java--minecraft-plugin" target="_blank">GitHub</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 12px; padding: 5px;">*And about three android apps, but I lost source code (Java +
+            AndroidSDK)</p>
       </div>
+      <hr>
     </div>
-    <span title="E-mail"><a href="mailto:michalc.jt@gmail.com" target="_blank">
-      <div class="clearfix">
-        <img src="img/gmail.png" class="icon" alt="GitHub">
-        <h1 class="gmail">E-mail</h1>
-      </div>
-    </a>
-  </span>
-    <span title="GitHub"><a href="https://github.com/michalczemierowski" target="_blank">
-        <div class="clearfix">
-          <img src="img/github.svg" class="icon" alt="GitHub">
-          <h1>GitHub</h1>
-        </div>
-      </a>
-    </span>
-    <span title="HackerRank"><a href="https://www.hackerrank.com/michalc_jt" target="_blank">
-        <div class="clearfix">
-          <img src="img/hackerrank.png" class="icon" alt="HackerRank">
-          <h1 class="hackerrank">HackerRank</h1>
-        </div>
-      </a>
-    </span>
-  </div>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="mailto:michalc.jt@gmail.com" target="_blank"><img width="40px"
+          src="img/gmail.png">E-mail</a>
+      <a class="navbar-brand" href="https://github.com/michalczemierowski" target="_blank"><img width="40px"
+          src="img/github.svg">GitHub</a>
+      <a class="navbar-brand" href="https://www.hackerrank.com/michalc_jt" target="_blank"><img width="40px"
+          src="img/hackerrank.png">Hackerrank</a>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
