@@ -21,7 +21,7 @@ body {
 .clearfix::after {
   content: "";
   clear: both;
-  display: table;ś
+  display: table;
 }
 
 .clearfix p {
@@ -55,8 +55,14 @@ a:hover {
   border-radius: 8px;
 }
 
+.game-icon {
+  width: 20%;
+  height: 20%;
+  border: 3px dashed black;
+}
+
 .whitetext {
-  color: white;
+  color: rgb(3, 3, 3);
   font-size: 64px;
   text-align: left;
   padding: 20px;
