@@ -42,13 +42,13 @@ a:hover {
 .centericon{
   margin: auto;
   width: 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
 }
 
 .icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  width: 90%;
   border: 2px dashed black;
 }
 
