@@ -1,6 +1,11 @@
+:root {
+  --bg: white;
+  --light: whitesmoke;
+  --dark: #242227;
+}
 
 body {
-  background-color: #242227;
+  background-color: var(--color5);
   font-family: 'Roboto', sans-serif;
   max-width: 992px;
   min-width: 898px;
@@ -8,16 +13,61 @@ body {
 }
 
 .content .white {
-  background-color: white;
+  background-color: var(--bg);
 }
 
-.content p, h2, h3, h4, h5, h6 {
+.content h2, h3, h4, h5, h6 {
   text-align: center;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  font-size: xx-large;
+}
+.url{
+  border-bottom: 0px solid var(--bg);
+  border-top: 0px solid var(--bg);
+  transition: .25s ease;
+}
+.url:hover{
+  border-top: 3px solid var(--dark);
+  border-bottom: 3px solid var(--dark);
+  transition: .25s ease;
 }
 
 .content h1 {
   text-align: center;
   font-size: 60px;
+}
+
+.aboutmeheader {
+  text-align: left;
+  margin: 5px 15px -15px;
+}
+
+.progress {
+  height: 32px;
+  margin-bottom: 10px;
+  /* direction: rtl; */
+}
+
+.progress div {
+  text-align: left;
+  background-color: var(--dark);
+}
+
+.progress div p {
+  margin: auto;
+  margin-left: 0px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.progress div p:hover {
+  opacity: 1;
+  transition: .5s ease;
 }
 
 .clearfix::after {
@@ -37,18 +87,32 @@ body {
   text-decoration: none;
 }
 
-a:hover {
-  text-shadow: 2px 2px 8px black;
+.atxt {
+  cursor: pointer;
+  transition: .5s ease;
 }
 
-.description p{
-	margin-bottom: 0px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
+.atxt:hover {
+  box-shadow: 1px 1px var(--dark), 2px 2px var(--dark), 3px 3px var(--dark);
+  -webkit-transform: translateX(-3px)!important;
+  transform: translateX(-3px)!important;
+  background-color: var(--dark)!important;
+  color: var(--bg)!important;
+  transition: .5s ease;
 }
 
-.centericon{
+a {
+  padding: 10px;
+}
+
+.description p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.centericon {
   margin: auto;
   width: 50%;
   height: 200px;
@@ -65,14 +129,20 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 2px dashed white;
-  color: white;
-  background-color: #242227;
-  
+  border: 2px dashed var(--bg);
+  color: var(--bg);
+  background-color: var(--dark);
+  transition: .5s ease;
 }
 
-.icon p
-{
+.icon:hover {
+  border-color: var(--dark);
+  background-color: var(--light)!important;
+  color: var(--dark)!important;
+  transition: .5s ease;
+}
+
+.icon p {
   margin: 0;
   position: relative;
   top: 50%;
@@ -83,16 +153,16 @@ a:hover {
 }
 
 .whitetext {
-  color: rgb(3, 3, 3);
+  color: var(--dark);
   font-size: 64px;
   text-align: left;
   padding: 20px;
 }
 
-.center_vertical_table td{
+.center_vertical_table td {
   vertical-align: middle;
 }
 
-.center_horizontal_table td{
+.center_horizontal_table td {
   text-align: center;
 }
