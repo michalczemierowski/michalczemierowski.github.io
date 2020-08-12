@@ -1,204 +1,204 @@
 :root {
-  --bg: white;
-  --light: whitesmoke;
-  --dark: #242227;
+	--bg: white;
+	--light: whitesmoke;
+	--dark: #242227;
 }
 
 body {
-  background-color: var(--color5);
-  font-family: 'Roboto', sans-serif;
-  max-width: 992px;
-  min-width: 898px;
-  margin: auto;
+	background-color: var(--color5);
+	font-family: 'Roboto', sans-serif;
+	max-width: 992px;
+	min-width: 898px;
+	margin: auto;
 }
 
 .content .white {
-  background-color: var(--bg);
+	background-color: var(--bg);
 }
 
 .content h3, h4, h5, h6 {
-  text-align: center;
-  font-weight: bold;
-  /* background-color: var(--dark); */
+	text-align: center;
+	font-weight: bold;
+	/* background-color: var(--dark); */
 }
 
-.content h2{
-  font-weight: bold;
-  text-align: left;
-  padding-left: 24px;
+.content h2 {
+	font-weight: bold;
+	text-align: left;
+	padding-left: 24px;
 }
 
 .header {
-  text-align: center;
-  font-size: xx-large;
+	text-align: center;
+	font-size: xx-large;
 }
 
 .url {
-  border-bottom: 0px solid var(--bg);
-  /* border-top: 0px solid var(--bg); */
-  transition: .25s ease;
+	border-bottom: 0px solid var(--bg);
+	/* border-top: 0px solid var(--bg); */
+	transition: .25s ease;
 }
 
 .url:hover {
-  /* border-top: 3px solid var(--dark); */
-  border-bottom: 3px solid var(--dark);
-  transition: .25s ease;
+	/* border-top: 3px solid var(--dark); */
+	border-bottom: 3px solid var(--dark);
+	transition: .25s ease;
 }
 
 .content h1 {
-  text-align: center;
-  font-size: 60px;
+	text-align: center;
+	font-size: 60px;
 }
 
 .aboutmeheader {
-  text-align: left;
-  margin: 5px 15px -15px;
+	text-align: left;
+	margin: 5px 15px -15px;
 }
 
 .progress {
-  height: 32px;
-  margin-bottom: 10px;
-  /* direction: rtl; */
+	height: 32px;
+	margin-bottom: 10px;
+	/* direction: rtl; */
 }
 
 .progress div {
-  text-align: left;
-  background-color: var(--dark);
+	text-align: left;
+	background-color: var(--dark);
 }
 
 .progress div p {
-  margin: auto;
-  margin-left: 0px;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+	margin: auto;
+	margin-left: 0px;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
 }
 
 .progress div p:hover {
-  opacity: 1;
-  transition: .5s ease;
+	opacity: 1;
+	transition: .5s ease;
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .clearfix p {
-  text-align: left;
-  padding: 20px;
-  font-size: 18px;
+	text-align: left;
+	padding: 20px;
+	font-size: 18px;
 }
 
 .content a:link, .content a:visited, .content a:active {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 .atxt {
-  cursor: pointer;
-  transition: .5s ease;
+	cursor: pointer;
+	transition: .5s ease;
 }
 
 .atxt:hover {
-  box-shadow: 1px 1px var(--dark), 2px 2px var(--dark), 3px 3px var(--dark);
-  -webkit-transform: translateX(-3px)!important;
-  transform: translateX(-3px)!important;
-  background-color: var(--dark)!important;
-  color: var(--bg)!important;
-  transition: .5s ease;
+	box-shadow: 1px 1px var(--dark), 2px 2px var(--dark), 3px 3px var(--dark);
+	-webkit-transform: translateX(-3px)!important;
+	transform: translateX(-3px)!important;
+	background-color: var(--dark)!important;
+	color: var(--bg)!important;
+	transition: .5s ease;
 }
 
 a {
-  padding: 10px;
+	padding: 10px;
 }
 
 .description p {
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
+	font-size: 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 
 .centericon {
-  margin: auto;
-  width: 6in;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
+	margin: auto;
+	width: 6in;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
 }
 
 .icon {
-  width: 2.5in;
-  height: 2.5in;
-  margin-top: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 2px dashed var(--bg);
-  color: var(--bg);
-  background-color: var(--dark);
-  transition: .5s ease;
+	width: 2.5in;
+	height: 2.5in;
+	margin-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 2px dashed var(--bg);
+	color: var(--bg);
+	background-color: var(--dark);
+	transition: .5s ease;
 }
 
 .icon:hover {
-  border-color: var(--dark);
-  background-color: var(--light)!important;
-  color: var(--dark)!important;
-  transition: .5s ease;
+	border-color: var(--dark);
+	background-color: var(--light)!important;
+	color: var(--dark)!important;
+	transition: .5s ease;
 }
 
 .icon p {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-  font-weight: bold;
+	margin: 0;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	font-weight: bold;
 }
 
 .whitetext {
-  color: var(--dark);
-  font-size: 64px;
-  text-align: left;
-  padding: 20px;
+	color: var(--dark);
+	font-size: 64px;
+	text-align: left;
+	padding: 20px;
 }
 
 .center_vertical_table td {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 .center_horizontal_table td {
-  text-align: center;
+	text-align: center;
 }
 
 .skills_container {
-  padding: 16px;
-  text-align: center;
-  /* background-color: var(--dark);
+	padding: 16px;
+	text-align: center;
+	/* background-color: var(--dark);
   color: var(--light); */
 }
 
-.badge-dark{
-  width: 64px;
-  background-color: var(--dark);
+.badge-dark {
+	width: 64px;
+	background-color: var(--dark);
 }
 
-.skills_container .header{
-  background-color: var(--light);
-  color: var(--dark);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  font-size: 20px;
+.skills_container .header {
+	background-color: var(--light);
+	color: var(--dark);
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 20px;
 }
 
 .skills_container .list div {
-  text-shadow: 0px 0px var(--dark);
-  transition: .1s ease;
+	text-shadow: 0px 0px var(--dark);
+	transition: .1s ease;
 }
 
 /* .skills_container .list div:hover {
@@ -208,10 +208,10 @@ a {
 } */
 
 .skills_container .row {
-  height: 100%;
+	height: 100%;
 }
 
-hr{
-  border-top: 2px solid var(--light);
-  margin: 2rem;
+hr {
+	border-top: 2px solid var(--light);
+	margin: 2rem;
 }
