@@ -5,11 +5,15 @@
 }
 
 body {
-	background-color: var(--color5);
+	background-color: var(--dark);
 	font-family: 'Roboto', sans-serif;
 	max-width: 992px;
 	min-width: 898px;
 	margin: auto;
+}
+
+.content {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19)
 }
 
 .content .white {

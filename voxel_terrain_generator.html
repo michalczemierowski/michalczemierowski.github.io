@@ -20,10 +20,13 @@
 
         gtag('config', 'UA-165313426-2');
     </script>
+
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
-    <script src="js/load_particles.js"></script>
+    <!-- <script src="js/load_particles.js"></script> -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -79,16 +82,35 @@
                         <br>• Toolbar system
                         <br>• Living entities (early stage of development)
                     </p>
+                    <br>
+                    <p>Demo:</p>
+                    <div style="width: 100%; height: 580px;">
+                        <video id="my-video" class="video-js" controls preload="auto" width="1280" height="720"
+                            style="width: 100%;" poster="/img/screenshots/voxel_terrain_generator_0.jpg"
+                            data-setup='{ "aspectRatio":"16:9", "playbackRates": [1, 1.5, 2] }'>
+                            <source src="/video/voxel_terrain_generator_demo.mp4" type="video/mp4" />
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                    video</a>
+                            </p>
+                        </video>
+                    </div>
                 </div>
                 <hr>
                 <h3>SCREENSHOTS:</h3>
                 <div>
-                    <img src="img/screenshots/voxel_terrain_generator-0.jpg" alt="voxel_terrain_generator-0"
+                    <img src="img/screenshots/voxel_terrain_generator_1.jpg" alt="voxel_terrain_generator-1"
                         style="width: 96%; margin: 10px 2% 0px; border: 2px dashed black;">
-                    <img src="img/screenshots/voxel_terrain_generator-1.jpg" alt="voxel_terrain_generator-1"
+                    <img src="img/screenshots/voxel_terrain_generator_2.jpg" alt="voxel_terrain_generator-2"
                         style="width: 96%; margin: 10px 2% 0px; border: 2px dashed black;">
-                    <img src="img/screenshots/voxel_terrain_generator-2.jpg" alt="voxel_terrain_generator-2"
-                        style="width: 96%; margin: 10px 2% 0px; border: 2px dashed black;">
+                </div>
+                <hr>
+                <div class="description">
+                    <p>Credits:
+                        <br>• Block textures: <a href="https://github.com/Unity-Resource-Pack/Unity">Unity Resource Pack</a>
+                    </p>
                 </div>
             </div>
             <hr>
@@ -102,6 +124,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
     </div>
 </body>
 
